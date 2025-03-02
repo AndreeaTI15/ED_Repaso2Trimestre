@@ -96,6 +96,7 @@ public class Biblioteca {
      * @param autor
      * @return libro
      * */
+    @Deprecated
     public Libro encuentaLibroPorAutor(String autor) {
         for (Libro libro : libros) {
             if (libro.getAutor().equals(autor)) {
@@ -116,6 +117,7 @@ public class Biblioteca {
      * Busca todos los libros de un autor determinado
      * @since V2.0
      * Sustituye al metodo {@link #encuentaLibroPorAutor(String)} en su lugar
+     * @return listaLibros
      *
      * */
     public List<Libro> encuentraLibrosPorAutor(String autor) {
